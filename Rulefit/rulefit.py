@@ -5,10 +5,10 @@ from sklearn.ensemble import GradientBoostingRegressor,GradientBoostingClassifie
 from rulefit import RuleFit
 
 
-boston_data = pd.read_csv("/Users/binbin/Documents/PhD/Research/Break event/data/Workbook2.csv", index_col=0)
+data = pd.read_csv("/Users/binbin/Documents/PhD/Research/Break event/data/Workbook2.csv", index_col=0)
 
-y1 = boston_data.y.values
-X1 = boston_data.drop("y", axis=1)
+y1 = data.y.values
+X1 = data.drop("y", axis=1)
 features = X1.columns
 X1 = X1.as_matrix()
 
